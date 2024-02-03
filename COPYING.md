@@ -21,3 +21,6 @@ This includes, but may not be limited to, the following files:
 The following files are owned by their respective copyright holders and must be used within each of their Brand Guidelines:
 
 - assets/images/external/*
+
+
+<!-- I WILL NOT DEAL WITH THIS, PIXEL, THIS IS YOUR JOB. -->

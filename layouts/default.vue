@@ -317,7 +317,7 @@
       <slot id="main" />
     </main>
     <footer>
-      <div class="logo-info" role="region" aria-label="Modrinth information">
+      <div class="logo-info" role="region" aria-label="Nova information">
         <BrandTextLogo
           aria-hidden="true"
           class="text-logo button-base"
@@ -328,7 +328,7 @@
             <template #github-link="{ children }">
               <a
                 :target="$external()"
-                href="https://github.com/modrinth"
+                href="https://github.com/NovaGH"
                 class="text-link"
                 rel="noopener"
               >
@@ -367,25 +367,13 @@
       </div>
       <div class="links links-2" role="region" aria-label="Resources">
         <h4 aria-hidden="true">{{ formatMessage(footerMessages.resourcesTitle) }}</h4>
-        <a :target="$external()" href="https://support.modrinth.com">
-          {{ formatMessage(footerMessages.support) }}
-        </a>
-        <a :target="$external()" href="https://blog.modrinth.com">
-          {{ formatMessage(footerMessages.blog) }}
-        </a>
-        <a :target="$external()" href="https://docs.modrinth.com">
-          {{ formatMessage(footerMessages.docs) }}
-        </a>
-        <a :target="$external()" href="https://status.modrinth.com">
-          {{ formatMessage(footerMessages.status) }}
-        </a>
       </div>
       <div class="links links-3" role="region" aria-label="Interact">
         <h4 aria-hidden="true">{{ formatMessage(footerMessages.interactTitle) }}</h4>
-        <a rel="noopener" :target="$external()" href="https://discord.modrinth.com"> Discord </a>
-        <a rel="noopener" :target="$external()" href="https://x.com/modrinth"> X (Twitter) </a>
-        <a rel="noopener" :target="$external()" href="https://floss.social/@modrinth"> Mastodon </a>
-        <a rel="noopener" :target="$external()" href="https://crowdin.com/project/modrinth">
+        <a rel="noopener" :target="$external()" href="https://worldwidepixel.ca/discord"> Discord </a>
+        <a rel="noopener" :target="$external()" href=""> Xitter </a>
+        <a rel="noopener" :target="$external()" href=""> Mastodon </a>
+        <a rel="noopener" :target="$external()" href="">
           Crowdin
         </a>
       </div>
@@ -448,7 +436,7 @@ const link = config.public.siteUrl + route.path.replace(/\/+$/, '')
 const verifyEmailBannerMessages = defineMessages({
   title: {
     id: 'layout.banner.verify-email.title',
-    defaultMessage: 'For security purposes, please verify your email address on Modrinth.',
+    defaultMessage: 'For security purposes, please verify your email address on Nova.',
   },
   action: {
     id: 'layout.banner.verify-email.action',
@@ -459,7 +447,7 @@ const verifyEmailBannerMessages = defineMessages({
 const addEmailBannerMessages = defineMessages({
   title: {
     id: 'layout.banner.add-email.title',
-    defaultMessage: 'For security purposes, please enter your email on Modrinth.',
+    defaultMessage: 'For security purposes, please enter your email on Nova.',
   },
   action: {
     id: 'layout.banner.add-email.button',
@@ -467,7 +455,7 @@ const addEmailBannerMessages = defineMessages({
   },
 })
 
-const stagingBannerMessages = defineMessages({
+const stagingBannerMessages = defineMessages({ //Leave this in while we use the staging api instead of our own
   title: {
     id: 'layout.banner.staging.title',
     defaultMessage: 'You’re viewing Modrinth’s staging environment.',
@@ -503,10 +491,6 @@ const messages = defineMessages({
     id: 'layout.avatar.alt',
     defaultMessage: 'Your avatar',
   },
-  getModrinthApp: {
-    id: 'layout.action.get-modrinth-app',
-    defaultMessage: 'Get Modrinth App',
-  },
   changeTheme: {
     id: 'layout.action.change-theme',
     defaultMessage: 'Change theme',
@@ -516,11 +500,11 @@ const messages = defineMessages({
 const footerMessages = defineMessages({
   openSource: {
     id: 'layout.footer.open-source',
-    defaultMessage: 'Modrinth is <github-link>open source</github-link>.',
+    defaultMessage: 'Nova is <github-link>open source</github-link>.',
   },
   companyTitle: {
     id: 'layout.footer.company.title',
-    defaultMessage: 'Company',
+    defaultMessage: 'Organization',
   },
   terms: {
     id: 'layout.footer.company.terms',
@@ -534,29 +518,9 @@ const footerMessages = defineMessages({
     id: 'layout.footer.company.rules',
     defaultMessage: 'Rules',
   },
-  careers: {
-    id: 'layout.footer.company.careers',
-    defaultMessage: 'Careers',
-  },
   resourcesTitle: {
     id: 'layout.footer.resources.title',
     defaultMessage: 'Resources',
-  },
-  support: {
-    id: 'layout.footer.resources.support',
-    defaultMessage: 'Support',
-  },
-  blog: {
-    id: 'layout.footer.resources.blog',
-    defaultMessage: 'Blog',
-  },
-  docs: {
-    id: 'layout.footer.resources.docs',
-    defaultMessage: 'Docs',
-  },
-  status: {
-    id: 'layout.footer.resources.status',
-    defaultMessage: 'Status',
   },
   interactTitle: {
     id: 'layout.footer.interact.title',
@@ -565,7 +529,7 @@ const footerMessages = defineMessages({
   legalDisclaimer: {
     id: 'layout.footer.legal-disclaimer',
     defaultMessage:
-      'NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT.',
+      'NOT AN OFFICIAL MINECRAFT SERVICE. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR MICROSOFT. - NOT AFFILIATED WITH RINTH INC.',
   },
 })
 
@@ -578,13 +542,13 @@ useHead({
   ],
 })
 useSeoMeta({
-  title: 'Modrinth',
+  title: 'Nova',
   description: () =>
     formatMessage({
       id: 'layout.meta.description',
       defaultMessage:
-        'Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on Modrinth. ' +
-        'Discover and publish projects on Modrinth with a modern, easy to use interface and API.',
+        'Download Minecraft Behaviour Packs, Resource Packs, Shaders, and more on Nova. ' +
+        'Discover and publish projects on Nova with a modern, easy to use interface and API.',
     }),
   publisher: 'Modrinth',
   themeColor: '#1bd96a',
@@ -596,15 +560,14 @@ useSeoMeta({
   ogDescription: () =>
     formatMessage({
       id: 'layout.meta.og-description',
-      defaultMessage: 'Discover and publish Minecraft content!',
+      defaultMessage: 'Discover and publish Minecraft: Bedrock Edition content!',
     }),
   ogType: 'website',
-  ogImage: 'https://cdn.modrinth.com/modrinth-new.png',
   ogUrl: link,
 
   // Twitter
   twitterCard: 'summary',
-  twitterSite: '@modrinth',
+  twitterSite: '',
 })
 
 const developerModeCounter = ref(0)
