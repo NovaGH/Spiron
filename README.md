@@ -1,7 +1,7 @@
 ![spiron logo](https://github.com/NovaGH/spiron/assets/58098422/d0f80bcb-41cf-4b77-8852-7fb682516814)
 
 
-## Loop's center for its frontend service
+## Nova's center for its frontend service
 
 Nova's frontend, based on Modrinth's knossos.
 
