@@ -1,4 +1,4 @@
-![spiron banner](https://github.com/NovaGH/spiron/assets/58098422/43c0385e-5c3b-401d-827c-4ad9e72dbdc4)
+![spiron banner](https://github.com/NovaGH/spiron/assets/58098422/d0f80bcb-41cf-4b77-8852-7fb682516814)
 
 ## Nova's center for its frontend service
 
